@@ -1,0 +1,119 @@
+@import url('https://fontes.googleapis.com/css?family-Poppins:400,500,700');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: lightblue;
+    /* url(unnamed.jpg);*/
+    opacity: 0.7;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: white;
+    min-height: 100vh;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo-name {
+    margin-left: 1rem;
+}
+
+.navbar ul,
+.footer-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a:link,
+.footer-nav a:link {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.navbar a:hover,
+.footer-nav a:hover {
+    color: yellowgreen;
+}
+
+.main,
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.main-footer {
+    height: 70px;
+    background-color: #5481b4;
+    font-weight: bold;
+}
+
+.social-link {
+    width: 1em;
+    margin-right: 0.25rem;
+}
+
+.main-footer .cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    flex-grow: 1;
+}
+
+.naslov {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.podnaslov {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: white;
+    background-color: blue;
+    padding: .76rem 1.4rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #436d9e;
+}
+
+.btn:focus {
+    background-color: #2796ff;
+}

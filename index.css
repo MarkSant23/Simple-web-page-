@@ -1,0 +1,85 @@
+.home-main {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.home-main .dama {
+    background-image: url(images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.home-main .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+@media (max-width:900px) {
+    .home-main .img-wrapper {
+        display: none;
+    }
+    .home-main {
+        justify-content: center;
+    }
+}
+
+.home-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(0, 192, 250, 0.2);
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+.home-circle-2 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 250, 0.1);
+    bottom: 20vw;
+    left: 35vw;
+    z-index: -1;
+}
+
+.home-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    /* miče klizne trake*/
+    width: 55vw;
+    height: 55vw;
+    /*border-radius: 50%; - radi kao elipsu u kutu*/
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.home-circle-3::before {
+    content: "";
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(62, 77, 178, 0.1);
+}
